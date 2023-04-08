@@ -1,6 +1,6 @@
 const isDevelopment = process.env.NODE_ENV === 'development'
 
-const baseUrl = process.env.BASE_URL
+const baseUrl = process.env.VUE_APP_BASE_API
 
 // 页面的title，keywords，description
 const meta = {

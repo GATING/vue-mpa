@@ -21,7 +21,7 @@
       <template v-else>
         <el-result icon="error" title="您还没登陆哦~" subTitle="请点击下方按钮进行登录">
           <template slot="extra">
-            <el-button type="success" size="medium">去登陆</el-button>
+            <el-button type="success" size="medium" @click="gotoLogin">去登陆</el-button>
           </template>
         </el-result>
       </template>
@@ -36,9 +36,14 @@ import { useEcharts } from '@/composable/echarts'
 import { getStorage } from '@/utils/auth'
 
 const userInfo = getStorage('userInfo')
+
+function gotoLogin() {
+  location.href = `/login.html?redirect=${encodeURIComponent(location.href)}`
+}
+
 async function logout() {
   await fetchLogout()
-  location.href = `/login.html?redirect=${encodeURIComponent(location.href)}`
+  gotoLogin()
 }
 
 // 图标相关

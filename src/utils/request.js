@@ -5,7 +5,6 @@ import { getToken } from './auth'
 import { errorStatus } from './variables.js'
 
 // 全局loading，这里以element-ui为例
-
 let loadingNum = 0 // 在加载中的页面
 let globalLoading = null
 const setLoading = () => {
