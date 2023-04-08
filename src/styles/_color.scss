@@ -1,0 +1,15 @@
+$names: 'primary', 'warning', 'danger', 'success', 'info', 'white', 'black';
+$colors: $--color-primary, $--color-warning, $--color-danger, $--color-success, $--color-info,
+  $--color-white, $--color-black;
+
+$i: 0;
+@each $name in $names {
+  $i: $i + 1;
+  .text-#{$name} {
+    color: nth($colors, $i);
+  }
+}
+
+.bg-white {
+  background: $--color-white;
+}

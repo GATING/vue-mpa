@@ -1,0 +1,31 @@
+$size-map: 10 20 30;
+$font-sizes: 12 13 14 15 16;
+$width-map: 100 200 300;
+$percent-map: 50 100;
+$border-radius: 10 20;
+
+// 优雅的选择字体
+// pc端
+$font-family-medium: -apple-system, BlinkMacSystemFont, 'PingFang-SC-medium', helvetica, tahoma,
+  arial, 'Microsoft YaHei', 'Hiragino Sans GB', 'WenQuanYi Micro Hei', sans-serif;
+$font-family-regular: -apple-system, BlinkMacSystemFont, 'PingFang-SC-regular', helvetica, tahoma,
+  arial, 'Microsoft YaHei', 'Hiragino Sans GB', 'WenQuanYi Micro Hei', sans-serif;
+
+$main-color: #333;
+
+/**
+ * @see <a href="https://github.com/ElemeFE/element/blob/dev/packages/theme-chalk/src/common/var.scss">ElementUi主题变量</a>
+ */
+$--color-primary: #409eff;
+$--color-success: #67c23a;
+$--color-warning: #e6a23c;
+$--color-danger: #f56c6c;
+$--color-info: #909399;
+$--color-white: #ffffff;
+$--color-black: #000000;
+
+@mixin ellipsis {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}

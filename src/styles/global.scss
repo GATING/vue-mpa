@@ -1,0 +1,31 @@
+@import './normalize.scss';
+@import './element-ui';
+@import './_flex';
+@import './_size';
+@import './_color';
+
+body {
+  font-family: $font-family-regular;
+  font-size: 14px;
+  line-height: 1.5;
+  color: $main-color;
+  margin: 0;
+  background: #f6f6f6;
+}
+
+.text-left {
+  text-align: left;
+}
+.text-center {
+  text-align: center;
+}
+.text-right {
+  text-align: right;
+}
+
+.global-loading {
+  position: fixed;
+  z-index: 99999;
+  height: 100%;
+  width: 100%;
+}
